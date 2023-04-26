@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oswald/style.css">
+    <title>Veille - Maxime Blanc</title>
+</head>
+<body>
+    <div class="header">
+        <div class="imglogoheader">
+            <a class="headerimg accueil"><img src="src/img/logomaxime.png" height="80px"></a>
+        </div>
+        <div class="navchapitres">
+            <nav class="headernav">
+                <ul class="headerul">
+                    <a href="Index.html"><li class="headerli">A propos</li></a>
+                    <a href="Competences.html"><li class="headerli">Compétences</li></a>
+                    <a href="Parcours.html"><li class="headerli">Parcours</li></a>
+                    <a href="Projets.html"><li class="headerli">Projets</li></a>
+                    <a href="Veille.html"><li class="headerli">Veille</li></a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="veille" id="veille">
+        <div class="enseigne">
+            <div class="separation"></div>
+            <h1>Veille</h1>
+            <div class="separation"></div>
+        </div>
+        <div class="espaceveilles">
+            <div class="veilleTechno">
+                <div class="texteVeille">
+                    <h2>Veille technologique</h2>
+                    <p>La veille technologique est un processus de surveillance et d'analyse de l'environnement technologique afin de se tenir 
+                        informé des dernières avancées, tendances, innovations et changements susceptibles d'affecter une entreprise, une industrie 
+                        ou un domaine particulier. Cela peut inclure la surveillance des brevets, des publications scientifiques, des sites web et 
+                        des blogs spécialisés, des communiqués de presse, des rapports de recherche, des événements et des conférences.</p><br>
+                    <p>Mon objectif concernant la veille technologique est de toujours être au courant des dernières nouveautés concernant l’Intelligence 
+                        Artificielle qui est le domaine dans lequel je veux me spécialiser.</p><br>
+                    <p>L’Intelligence Artificielle est une science mise en œuvre dans le but de réaliser des machines capables de simuler l’intelligence 
+                        humaine. Que ce soit dans le digital, la médecine ou encore l’industrie, l’Intelligence Artificielle se développe très vite 
+                        (peut-être trop vite) et commence à entrer de manière permanente dans notre vie. <br>Ainsi, il est donc essentiel de rester 
+                        constamment au fait des nouvelles avancées et sorties.</p>
+                    <h3>Comment ai-je mis en place ma veille technologique ?</h3>
+                    <p>Afin de me renseigner continuellement, j’utilise en grande partie les réseaux sociaux. En premier lieu, j’utilise les réseaux 
+                        sociaux où je suis différents créateurs de contenus parlant de l’Intelligence Artificielle.<br> Par exemple, je suis 
+                        particulièrement Micode, qui est un youtubeur développeur, ainsi que son émission hebdomadaire Underscore. 
+                        De plus, les comptes de Defend Intelligence, qui est un ingénieur en IA et de Dimension, qui est un étudiant en informatique, 
+                        me permettent d’avoir une approche plus technique sur le sujet.<br> Enfin, je consulte la chaîne de Développeur libre qui est un 
+                        développeur mobile IOS mais qui relate parfois de l’Intelligence Artificielle et me donne un approche différente des personnes 
+                        citées précédemment. Je me renseigne aussi via des comptes Twitter professionnels représentant des entreprises tels que OpenAI 
+                        ou GoogleAI</p><br>
+                    <p>Aussi, je me renseigne par le biais de livre permettant une mise en pratique mais aussi traitant de l’histoire de l’Intelligence 
+                        Artificielle et des tous ses concepts. Ces livres m’offrent donc la possibilité d’avoir mes premières expériences en Intelligence
+                        Artificielle. Les deux principaux sont : </p>
+                    <ul>
+                        <li>L’intelligence artificielle en pratique avec Python écrit par Hugues Bersini et Ken Hasselman</li>
+                        <li>Intelligence artificielle : Une approche moderne écrit par Stuart Russell et Peter Norvig</li>
+                    </ul>
+                    <br><br>
+                    <p>Afin de mettre en pratique les renseignements acquis, j’ambitionne de développer mon premier projet en Intelligence Artificielle 
+                        avant la fin de l’année 2023.</p>
+                </div>
+                <div class="imageTecho">
+                    <img src="src/img/veilleTechno.png" class="ImageIA" alt="veilleTechno" height="350px">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    :root{
+        --my-end-value : 180;
+    }
+
+    *{
+        margin: 0;
+        font-family: "Oswald";
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: rgb(34, 37, 49);
+    }
+
+    .header{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .header{
+        background-color: rgb(34, 37, 49);
+        color: white;
+    }
+
+    .headerul{
+        display: flex;
+        flex-wrap: nowrap;
+        width: max-content;
+        margin: auto;
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+        color: rgb(0, 255, 255);
+    }
+
+    .headerli{
+        text-decoration: none;
+        padding: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 22px;
+        z-index: 10;
+    }
+
+    .veille{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .veille h1{
+        font-size: 45px;
+        color: white;
+    }
+
+    .enseigne{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .separation{
+        width: 550px;
+        height: 3px;
+        background-image: linear-gradient(to right, #7372ba, #37b596);
+        margin-top: 1.8%;
+    }
+
+    .veilleTechno {
+        width: 80vw;
+        border : 5px solid rgb(0, 255, 255);
+        border-radius: 25px;
+    }
+
+    .veilleTechno h2{
+        font-size: 30px;
+        margin: 2%;
+        color: white;
+        text-align: center;
+    }
+</style>

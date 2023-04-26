@@ -11,18 +11,17 @@
 </head>
 <body>
     <div class="header">
-        <div class="imglogo">
-            <a class="headerimg accueil"><img src="logomaxime.png" height="80px"></a>
+        <div class="imglogoheader">
+            <a class="headerimg accueil"><img src="src/img/logomaxime.png" height="80px"></a>
         </div>
         <div class="navchapitres">
             <nav class="headernav">
                 <ul class="headerul">
-                    <a href="Accueil.php"><li class="headerli">A propos</li></a>
-                    <a href="Competences.php"><li class="headerli">Compétences</li></a>
-                    <a href="Parcours.php"><li class="headerli">Parcours</li></a>
-                    <a><li class="headerli">Projets</li></a>
-                    <a><li class="headerli">Veille numérique</li></a>
-                    <a><li class="headerli">Contact</li></a>
+                    <a href="Index.html"><li class="headerli">A propos</li></a>
+                    <a href="Competences.html"><li class="headerli">Compétences</li></a>
+                    <a href="Parcours.html"><li class="headerli">Parcours</li></a>
+                    <a href="Projets.html"><li class="headerli">Projets</li></a>
+                    <a href="Veille.html"><li class="headerli">Veille</li></a>
                 </ul>
             </nav>
         </div>
@@ -108,10 +107,10 @@
                     <br>
                     <p>Pour réaliser ces missions, j'ai utilisé principalement les langages HTML, CSS, PHP, Javascript et SQL.</p>
                     <br>
-                    <p>Si vous souhaitez en savoir plus sur le deroulé de ces missions, <a href="Rapport_de_stage_SN1.pdf" target="_blank">cliquez ici</a> pour accéder au rapport de stage.</p>
+                    <p>Si vous souhaitez en savoir plus sur le deroulé de ces missions, <a href="src/Rapport_de_stage_SN1.pdf" target="_blank">cliquez ici</a> pour accéder au rapport de stage.</p>
                     <br>
                     <p>Retrouvez, ci-dessous, quelques pages du site vitrine que j'ai réalisé pour l'association </p>
-                    <img src="SitePremierStage.png" alt="Site du Comité des Fêtes de Châtillon sur Chalaronne" class="imgsite" width="90%">
+                    <img src="src/img/SitePremierStage.png" alt="Site du Comité des Fêtes de Châtillon sur Chalaronne" class="imgsite" width="90%">
                 </div>
             </div>
             <div class="stagesecondyear">
@@ -132,7 +131,7 @@
                     <br>
                     <p>Pour réaliser ces missions, j'ai utilisé principalement les langages VB.NET et SQL.</p>
                     <br>
-                    <img src="logomsa.png" alt="Logo MSA" class="imglogo" width="40%">
+                    <img src="src/img/logomsa.png" alt="Logo MSA" class="imglogo" width="40%">
                 </div>
             </div>
         </div>
@@ -144,17 +143,15 @@
             <h3>Maxime<span>Blanc</span></h3>
 
             <p class="footer-links">
-                <a href="Accueil.php">A propos</a>
+                <a href="Accueil.html">A propos</a>
                 |
-                <a href="Competences.php">Compétences</a>
+                <a href="Competences.html">Compétences</a>
                 |
-                <a href="Parcours.php">Parcours</a>
+                <a href="Parcours.html">Parcours</a>
                 |
-                <a href="Projets.php">Projets</a>
+                <a href="Projets.html">Projets</a>
                 |
-                <a href="Vieille.php">Veille Technologique</a>
-                |
-                <a href="Contact.php">Contact</a>
+                <a href="Vieille.html">Veille Technologique</a>
             </p>
 
             <p class="footer-company-name">Copyright © 2023 <strong>Maxime Blanc</strong></p>
@@ -217,6 +214,15 @@
         list-style: none;
     }
 
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+        color: rgb(0, 255, 255);
+    }
+
     .headerli{
         text-decoration: none;
         padding: 15px;
@@ -225,6 +231,7 @@
         font-size: 22px;
         z-index: 10;
     }
+
 
     .experiences{
         padding-top: 50px;
@@ -666,5 +673,135 @@
         .footer-distributed .footer-center i {
             margin-left: 0;
         }
-    }     
+    } 
+    
+    @media (max-width: 600px) {
+        .headerul{
+            padding: 0;
+        }
+
+        .headerli{
+            text-decoration: none;
+            padding: 5px;
+            justify-content: space-around;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 15px;
+            z-index: 10;
+        }
+
+        .imglogoheader{
+            display: none;
+        }
+
+        .enseigne{
+            padding-bottom: 10%;
+        }
+
+        .separation{
+            width: 30%;
+            margin-top: 3.5vh;
+        }
+
+        .enseigne h2{
+            font-size: 2em;
+        }
+
+        .experiences{
+            padding-bottom: 0;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+            margin-left: 15%;
+            padding: 0 20px;
+        }
+
+        .timeline:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            width: 4px;
+            left: 0%;
+            background-image: linear-gradient(to bottom, #7372ba, #37b596);
+            border-radius: 3px;
+            z-index: 1;
+        }
+
+        .timeline article {
+            position: relative;
+            background: #eeeeee;
+            width: calc(100% - 20px);
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 25px;
+            box-shadow: 4px 4px 6px 1px #7372ba, -4px -4px 6px -1px #7372ba,
+                -0.5px -0.5px 0px #7372ba, 0.5px 0.5px 0px #7372ba,
+                0px 12px 10px -10px #7372ba;
+        }
+
+        .timeline article .entete {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 5px;
+            margin-bottom: 15px;
+        }
+
+        .timeline article p {
+            margin-left: 5px;
+        }
+
+        .timeline article + article {
+            margin-top: 20px;
+        }
+
+        .timeline article:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -12px;
+            left: calc(0% - 36px);
+            background: #d6d6d6;
+            width: 24px;
+            height: 24px;
+            border: 6px #7372ba solid;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .timeline article:after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: calc(50% - 8px);
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-left: 16px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+
+        .timeline article:nth-child(even) {
+            margin-left: 0;
+        }
+
+        .timeline article:nth-child(even):before {
+            left: calc(0% - 36px);
+        }
+
+        .timeline article:nth-child(even):after {
+            left: auto;
+            right: calc(50% - 8px);
+            border-left: none;
+            border-right: 16px solid transparent;
+        }
+
+        .zonetextexp a{
+            color: #7372ba;
+        }
+
+    }
 </style>

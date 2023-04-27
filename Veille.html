@@ -589,11 +589,11 @@
     var arrowLeft = document.querySelector(".arrow-left");
     var arrowRight = document.querySelector(".arrow-right");
     var veille = document.querySelector(".AllVeille");
-    var veilleWidth = document.querySelector(".FirstVeille").offsetWidth + 50;
+    var veilleWidth = (document.querySelector(".FirstVeille").clientWidth / window.innerWidth) * 100 + 1.5;
 
     arrowRight.addEventListener("click", function(){
         if(veille.style.marginLeft == ""){
-            veille.style.marginLeft = "-"+veilleWidth+"px";
+            veille.style.marginLeft = "-"+veilleWidth+"vw";
             arrowRight.style.marginTop = "300px";
             arrowLeft.style.marginTop = "300px";
             window.scrollTo(0, 100);
@@ -601,7 +601,7 @@
     });
 
     arrowLeft.addEventListener("click", function(){
-        if(veille.style.marginLeft == "-"+veilleWidth+"px"){
+        if(veille.style.marginLeft == "-"+veilleWidth+"vw"){
             veille.style.marginLeft = "";
             arrowRight.style.marginTop = "800px";
             arrowLeft.style.marginTop = "800px";

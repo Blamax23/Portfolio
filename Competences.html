@@ -772,6 +772,10 @@
     }
 
     @media (max-width: 600px) {
+        html{
+            overflow-x: hidden;
+        }
+
         .headerul{
             padding: 0;
         }
@@ -796,6 +800,47 @@
 
         .separation{
             width: 15%;
+            margin-top: 2vh;
+        }
+
+        .enseigne h2{
+            font-size: 2em;
+        }
+
+        .undercomp{
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width: 1050px) {
+        html{
+            overflow-x: hidden;
+        }
+
+        .headerul{
+            padding: 0;
+        }
+
+        .headerli{
+            text-decoration: none;
+            padding-left: 10px;
+            justify-content: space-around;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 35px;
+            z-index: 10;
+        }
+
+        .imglogo{
+            display: none;
+        }
+
+        .enseigne{
+            padding-bottom: 10%;
+        }
+
+        .separation{
+            width: 35%;
             margin-top: 2vh;
         }
 

@@ -448,6 +448,7 @@
         width: 90%;
         margin: auto;
         margin-top: 100px;
+        margin-bottom: 50px;
         padding: 10px;
         border-radius: 15px;
         border: 1px solid #37b596;
@@ -676,6 +677,10 @@
     } 
     
     @media (max-width: 600px) {
+        html{
+            overflow-x: hidden;
+        }
+
         .headerul{
             padding: 0;
         }
@@ -801,6 +806,149 @@
 
         .zonetextexp a{
             color: #7372ba;
+        }
+
+    }
+
+    @media (max-width: 1050px) {
+        html{
+            overflow-x: hidden;
+        }
+
+        .headerul{
+            padding: 0;
+        }
+
+        .headerli{
+            text-decoration: none;
+            padding-left: 10px;
+            justify-content: space-around;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 35px;
+            z-index: 10;
+        }
+
+        .imglogoheader{
+            display: none;
+        }
+
+        .enseigne{
+            padding-bottom: 10%;
+        }
+
+        .separation{
+            width: 30%;
+            margin-top: 3.5vh;
+        }
+
+        .enseigne h2{
+            font-size: 2em;
+        }
+
+        .experiences{
+            padding-bottom: 0;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+            margin-left: 15%;
+            padding: 0 20px;
+            font-size: 25px;
+        }
+
+        .timeline:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            width: 4px;
+            left: 0%;
+            background-image: linear-gradient(to bottom, #7372ba, #37b596);
+            border-radius: 3px;
+            z-index: 1;
+        }
+
+        .timeline article {
+            position: relative;
+            background: #eeeeee;
+            width: calc(100% - 20px);
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 25px;
+            box-shadow: 4px 4px 6px 1px #7372ba, -4px -4px 6px -1px #7372ba,
+                -0.5px -0.5px 0px #7372ba, 0.5px 0.5px 0px #7372ba,
+                0px 12px 10px -10px #7372ba;
+        }
+
+        .timeline article .entete {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 5px;
+            margin-bottom: 15px;
+        }
+
+        .timeline article p {
+            margin-left: 5px;
+        }
+
+        .timeline article + article {
+            margin-top: 20px;
+        }
+
+        .timeline article:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -12px;
+            left: calc(0% - 36px);
+            background: #d6d6d6;
+            width: 24px;
+            height: 24px;
+            border: 6px #7372ba solid;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .timeline article:after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: calc(50% - 8px);
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-left: 16px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+
+        .timeline article:nth-child(even) {
+            margin-left: 0;
+        }
+
+        .timeline article:nth-child(even):before {
+            left: calc(0% - 36px);
+        }
+
+        .timeline article:nth-child(even):after {
+            left: auto;
+            right: calc(50% - 8px);
+            border-left: none;
+            border-right: 16px solid transparent;
+        }
+
+        .zonetextexp a{
+            color: #7372ba;
+        }
+
+        .zonetitle{
+            font-size: 30px;
+        }
+
+        .zonetextexp{
+            font-size: 30px;
         }
 
     }

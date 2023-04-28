@@ -513,6 +513,10 @@
             padding: 0;
         }
 
+        html{
+            overflow-x: hidden;
+        }
+
         .headerli{
             text-decoration: none;
             padding: 5px;
@@ -571,11 +575,93 @@
         }
 
         .texteVeille img{
-            height: 40vh;
+            height: 38vh;
+            padding-left: 10px;
         }
 
         .FirstVeille{
             width: 45%;
+        }
+
+        .SecondVeille{
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 1050px) {
+        .headerul{
+            padding: 0;
+        }
+
+        html{
+            overflow-x: hidden;
+        }
+
+        .headerli{
+            text-decoration: none;
+            padding-left: 10px;
+            justify-content: space-around;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 35px;
+            z-index: 10;
+        }
+
+        .imglogoheader{
+            display: none;
+        }
+
+        .enseigne{
+            padding-bottom: 10%;
+        }
+
+        .separation{
+            width: 30%;
+            margin-top: 3vh;
+        }
+
+        .enseigne h2{
+            font-size: 2em;
+        }
+
+        .arrow-left, .arrow-right {
+            display: none;
+        }
+
+        .espaceveilles {
+            width: 100%;
+            overflow-x: scroll;
+            margin-left: 0;
+        }
+
+        .AllVeille{
+            width: 200vw;
+            justify-content: space-around;
+        }
+
+        .ContenuVeille{
+            margin-left: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .veilleJuri{
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .texteVeille{
+            width: 95%;
+            margin: auto;
+        }
+
+        .texteVeille img{
+            height: 38vh;
+            padding-left: 10px;
+        }
+
+        .FirstVeille{
+            width: 40%;
         }
 
         .SecondVeille{

@@ -81,6 +81,9 @@
                 </nav>
                 <div class="divinfo textinfo about_p" id="about_presentation_p">
                     <p class="zonetexte">Bonjour, je m'appelle Maxime Blanc, j'ai 18 ans et je suis originaire de l'Ain. <br><br>Actuellement en 2ème année d'étude à EPSI Lyon, je suis une formation pour passer un bachelor informatique ainsi qu'un BTS SIO en paralelle. J'ambitionne de préparer un diplôme d'ingénieur ou équivalent puis de poursuivre par un doctorat en intelligence artificielle, domaine dans lequel je souhaite donc me spécialiser. <br><br> Etant passionné d'abord par les jeux vidéos puis par tout ce qui touche de près ou de loin aux nouvelles technologies, j'aime participer aux activités d'une entreprise. J'apprécie aussi de créer des projets personnels qui me permettent d'améliorer mes compétences mais aussi de metttre en oeuvre mes idées qui me sortent par la tête. <br><br>Si vous souhaitez me confier un projet, en savoir plus sur moi ou me contacter, ne perdez pas de temps pour explorer ce site ou télécharger mon CV !</p>
+                    <div class="cv">
+                        <a href="src/CV.pdf">CV Maxime Blanc</a>
+                    </div>
                 </div>
                 <div class="divinfo textlangues about_p hidden" id="about_langues_p">
                     <div class="france">
@@ -348,6 +351,23 @@
 
     .divinfo.hidden{
         display: none;
+    }
+
+    .cv{
+        padding: 2%;
+        width: max-content;
+        background-color: #37b596;
+        border-radius: 25px;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .cv:hover{
+        background-color: #7372ba;
+    }
+
+    .cv a:hover{
+        color: white;
     }
 
     .textlangues{

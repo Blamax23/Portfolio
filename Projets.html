@@ -9,6 +9,21 @@
     <title>Projets - Maxime Blanc</title>
 </head>
 <body>
+    <div class="zoneloader" id="loader">
+        <div class="loader">
+            <div class="firstcircle">
+                <div class="secondcircle">
+                    <div class="thirdcircle">
+
+                    </div>
+                </div>
+            </div>
+            <div class="titleload">
+                <p>MAXIME BLANC</p>
+            </div>
+        </div>
+
+    </div>
     <div class="header">
         <div class="imglogoheader">
             <a class="headerimg accueil"><img src="src/img/logomaxime.png" height="80px"></a>
@@ -91,6 +106,7 @@
     }
 
     body{
+        overflow: hidden;
         background-color: rgb(34, 37, 49);
     }
 
@@ -163,6 +179,88 @@
         margin-bottom: 30vh;
         font-size: 100px;
     }
+
+    .zoneloader{
+        z-index : 500;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loader{
+        display: flex;
+        flex-wrap: wrap;
+        width: 222px;
+    }
+
+    .firstcircle{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        background-image: url(src/img/load.png);
+        background-size: contain;
+        border-radius: 50%;
+        overflow: hidden;
+        animation: rotate 2s linear infinite;
+    }
+
+    @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+
+    .secondcircle{
+        width: 133px;
+        height: 133px;
+        background-image: url(src/img/load.png);
+        background-size: contain;
+        margin-top: 45px;
+        margin-left: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        animation: rotate 2s linear infinite;
+    }
+
+    @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+
+        .thirdcircle{
+            width: 66px;
+            height: 66px;
+            background-image: url(src/img/load.png);
+            background-size: contain;
+            margin-top: 45px;
+            margin-left: 7px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .titleload p{
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5em;
+            background-image: linear-gradient(to right, #7372ba, #37b596);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .fondu{
+            display: none;
+        }
 
     @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
@@ -440,3 +538,20 @@
         }
     }
 </style>
+
+<script>
+    
+    var pixelsScrolledVertically = window.scrollY;
+
+    if (pixelsScrolledVertically != 0){
+        let loader = document.querySelector(".zoneloader");
+        loader.style.top = pixelsScrolledVertically + "px";
+    }
+
+    setTimeout(() => {
+        let loader = document.querySelector(".zoneloader");
+        let body = document.querySelector('body');
+        loader.classList.add("fondu");
+        body.style.overflowY = "scroll";
+    }, 1500);
+</script>

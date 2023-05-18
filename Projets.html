@@ -49,7 +49,27 @@
             <div class="separation"></div>
         </div>
 
-        <h1 class="load">Projets en cours d'acheminement...</h1>
+        <div class="allProjects">
+            <div class="project">
+                <div class="generator" onclick="window.location.href='src/FichierJSON/Accueil.php'">
+                    <div class="imggenerator">
+                        <img src="src/img/generator.png" alt="generator" width="100%">
+                    </div>
+                    <div class="textgenerator">
+                        <h2>Générateur de fichiers JSON</h2>
+                        <p>Lors du développement des deux projets pour le compte de l'épreuve E5 du BTS, nous avions besoin de remplir la base de données
+                            avec des données aléatoires. J'ai donc eu envie de créer un générateur de fichier JSON qui me permettrait ensuite de remplir facilement
+                            la base de données. Ainsi, l'utilisateur doit remplir le nom de ses colonnes dans la table, le type de données qu'il souhaite, des prénoms 
+                            ou des adresses par exemple et enfin le nombre de lignes qu'il souhaite générer. Le fichier JSON est ensuite généré puis téléchargé afin d'être utilisé 
+                            pour remplir la base de données.<br><br>
+                            Ce site et cette fonctionnalité ont été réalisés en PHP, HTML et CSS.<br><br>
+                            Vous pouvez retrover le code source sur mon Github : <a href="https://github.com/Blamax23/FichierJSON"><i class="fa fa-github fa-2x"></i></a>
+                        </p> 
+                        <a></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer-distributed">
@@ -262,6 +282,71 @@
         .fondu{
             display: none;
         }
+
+    .project{
+        width: 80%;
+        height: 40vh;
+        margin: auto;
+        padding: 0.2%;
+        background-image: linear-gradient(to right, #7372ba, #37b596);
+        border-radius: 25px;
+        margin-top: 50px;
+    }
+
+    .project:hover{
+        transform: scale(1.1);
+        animation: zoom 0.2s linear;
+    }
+
+    @keyframes zoom{
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.05);
+        }
+    }
+
+    .imggenerator{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .imggenerator img{
+        padding: 2%;
+        border-radius: 25px;
+    }
+
+    .generator{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(34, 37, 49);
+        border-radius: 25px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .textgenerator{
+        width: 70%;
+        height: 80%;
+    }
+
+    .textgenerator h2{
+        width: max-content;
+        font-size: 2em;
+        color: white;
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+
+    .generator p{
+        font-size: 1em;
+        margin: auto;
+        color: white;
+    }
 
     @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
